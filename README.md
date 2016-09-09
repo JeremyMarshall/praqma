@@ -128,3 +128,4 @@ Issue modification options
     -f, --force                      replace existing labels
 ```
 https://github.com/stephencelis/ghi/issues/105
+You need to use the whole label to add it to an issue or it will create a new label and add that to your issue!
