@@ -88,6 +88,25 @@ Alias | Comment
 `git deliver` |  Push your current branch to a ready/<current-branch> on the remote and then rename your local branch to delivered/<current-branch>. You might not want to delete your branch just yet, until you’ve seen that it’s successfully integrated.
 `git purge-all-delivered` | will remove all local branches named delivered/** and at the same time remove any corresponding branches you may have pushed to origin - without the ready/** prefix.
 
+## Setup waffle.io
+
+Waffle works off the status labels and these need to be configured. I haven't looked or found a way to do this programatically. 
+
+1. Go to your waffle board
+2. Expand the left hand menu at the bottom left
+3. Select Project Settings then Columns
+4. Add a new Column "Up Next" after "Ready"
+5. Set the Status dropdown label
+   
+   Status|Label
+   ---|---
+   Ready|Status - workable
+   Up Next|Status - upNext
+   In Progress| Status - in progress
+
+6. When you update the status (below) it should reflect without having to push
+
+
 ## Workflow
 
 - list mine
@@ -96,8 +115,6 @@ Alias | Comment
 
 - Work on an issue 
 `git work-on <issue>` will create a branch called `<issue>-<title>` and also move it in https://waffle.io
-
-`git push origin <issue>` Seems to be needed to update waffle. wtf? 
 
 
 - Wrap up
