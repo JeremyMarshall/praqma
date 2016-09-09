@@ -96,6 +96,7 @@ Alias | Comment
 
 - Work on an issue 
 `git work-on <issue>` will create a branch called `<issue>-<title>` and also move it in https://waffle.io
+
 `git push origin <issue>` Seems to be needed to update waffle. wtf? 
 
 
