@@ -120,6 +120,9 @@ Waffle works off the status labels and these need to be configured. I haven't lo
 - Wrap up
 `git wrapup` will add and remove and commit
 
+- Deliver
+`git deliver` will push the branch. This issue will not close until the branch is merged. Github understands ready branches and will prompt to merge it.
+
 
 - Open an issue
 `ghi open` which opens an editor. The first line is the title the rest is the description
