@@ -1,4 +1,4 @@
 # Link
 
-[index|readme.md]
+[index](readme.md)
 
